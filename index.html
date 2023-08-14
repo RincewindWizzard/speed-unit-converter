@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Webpack App</title>
+</head>
+<body>
+<main>
+
+    <section>
+        <header>
+            <h2>Knots to km/h to m/s to Bft Converter</h2>
+        </header>
+        <form id="unit_calculator">
+            <label for="knots">Knots</label>
+            <input id="knots" type="number" value="0">
+
+            <label for="kmh">km/h</label>
+            <input id="kmh" type="number" value="0">
+
+            <label for="mps">m/s</label>
+            <input id="mps" type="number" value="0">
+
+            <label for="beaufort">Bft</label>
+            <input id="beaufort" type="number" value="0">
+        </form>
+    </section>
+</main>
+</body>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("service-worker.js")
+                .then((registration) => {
+                    console.log("Service Worker registered: ", registration);
+                })
+                .catch((registrationError) => {
+                    console.error("Service Worker registration failed: ", registrationError);
+                });
+        });
+    }
+</script>
+</html>
