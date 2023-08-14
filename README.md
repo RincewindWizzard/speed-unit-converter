@@ -1,15 +1,5 @@
-# 🚀 Welcome to your new awesome project!
+# Unit Converter
 
-This project has been created using **webpack-cli**, you can now run
+This is an example project using webpack, typescrypt, mvp.css, github actions and github pages.
 
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+You can see it in [action](https://rincewindwizzard.github.io/speed-unit-converter/)!
